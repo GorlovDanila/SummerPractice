@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.summer_practice.fragments.ProfileFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/finishFragment"
+        tools:layout="@layout/fragment_messages"
+        android:name="com.example.summer_practice.fragments.FinishFragment"
+        android:label="FinishFragment" />
+
+    <fragment
+        android:id="@+id/messagesFragment"
+        tools:layout="@layout/fragment_messages"
+        android:name="com.example.summer_practice.fragments.MessagesFragment"
+        android:label="MessagesFragment" >
+    <action
+        android:id="@+id/action_messageFragment_to_finishFragment"
+        app:destination="@id/finishFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/musicsFragment"
+        tools:layout="@layout/fragment_musics"
+        android:name="com.example.summer_practice.fragments.MusicsFragment"
+        android:label="MusicsFragment" >
+    <action
+        android:id="@+id/action_musicsFragment_to_finishFragment"
+        app:destination="@id/finishFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/shopsFragment"
+        tools:layout="@layout/fragment_shops"
+        android:name="com.example.summer_practice.fragments.ShopsFragment"
+        android:label="ShopsFragment" >
+    <action
+        android:id="@+id/action_shopsFragment_to_finishFragment"
+        app:destination="@id/finishFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        tools:layout="@layout/fragment_settings"
+        android:name="com.example.summer_practice.fragments.SettingsFragment"
+        android:label="SettingsFragment" >
+    <action
+        android:id="@+id/action_settingsFragment_to_finishFragment"
+        app:destination="@id/finishFragment" />
+
+    </fragment>
+
+</navigation>

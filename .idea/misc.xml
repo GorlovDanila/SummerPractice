@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/activity_main.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/fragment_finish.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/fragment_messages.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/fragment_musics.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/fragment_profile.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/fragment_settings.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/layout/fragment_shops.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/menu/menu.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/danil/AndroidStudioProjects/Summer_practice2/app/src/main/res/menu/menu_main.xml" value="0.11302083333333333" />
       </map>
     </option>
   </component>

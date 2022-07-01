@@ -1,111 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
-    android:backgroundTint="#2196F3"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/personName"
-        android:layout_width="107dp"
-        android:layout_height="23dp"
-        android:background="#00BCD4"
-        android:cursorVisible="false"
-        android:hint="Name: "
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textStyle="bold"
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="81dp" />
-
-    <EditText
-        android:id="@+id/personAge"
-        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/main_graph" />
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#00BCD4"
-        android:ems="10"
-        android:hint="Age: "
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/personWeight"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/personHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:background="#00BCD4"
-        android:backgroundTint="#00BCD4"
-        android:ems="10"
-        android:hint="Height: "
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/personName"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/personWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="#00BCD4"
-        android:ems="10"
-        android:hint="Weight: "
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/personHeight"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="221dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="128dp"
-        android:background="#00BCD4"
-        android:ems="10"
-        android:hint="Result: "
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="130dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="148dp"
-        android:backgroundTint="#00BCD4"
-        android:hint="Calculate"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/personAge"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_main"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
