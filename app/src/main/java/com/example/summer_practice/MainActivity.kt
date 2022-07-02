@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun calculation() {
-        val name: TextView? = findViewById(R.id.personName)
-        val weight: TextView? = findViewById(R.id.personWeight)
-        val height: TextView? = findViewById(R.id.personHeight)
-        val age: TextView? = findViewById(R.id.personAge)
-        val result: TextView = findViewById(R.id.result)
+        val name: EditText? = findViewById(R.id.et_person_name)
+        val weight: EditText? = findViewById(R.id.et_person_weight)
+        val height: EditText? = findViewById(R.id.et_person_height)
+        val age: EditText? = findViewById(R.id.et_person_age)
+        val result: TextView = findViewById(R.id.tv_result)
 
         try {
             if((name == null) || (weight == null) || (height == null) || (age == null) || (name.text.length > 50) || (height.text.toString()
