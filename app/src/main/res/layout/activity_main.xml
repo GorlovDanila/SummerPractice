@@ -8,7 +8,7 @@
     android:backgroundTint="#2196F3"
     tools:context=".MainActivity">
 
-    <TextView
+     <TextView
         android:id="@+id/tv_result"
         android:layout_width="221dp"
         android:layout_height="20dp"
@@ -50,6 +50,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textStyle="bold"
+        android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_person_weight" />
@@ -66,6 +67,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textStyle="bold"
+        android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_person_name" />
@@ -81,6 +83,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textStyle="bold"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_person_height" />
