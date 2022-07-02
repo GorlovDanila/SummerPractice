@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_person_24"
+        android:title="@string/menu_profile"/>
+    <item
+        android:id="@+id/messagesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_message_24"
+        android:title="@string/menu_messages"/>
+    <item
+        android:id="@+id/musicsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_audiotrack_24"
+        android:title="@string/menu_music"/>
+    <item
+        android:id="@+id/shopsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_shop_24"
+        android:title="@string/menu_shop"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_settings_24"
+        android:title="@string/menu_settings"/>
+
+</menu>
