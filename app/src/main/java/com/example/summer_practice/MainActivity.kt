@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             if((name == null) || (weight == null) || (height == null) || (age == null) || (name.text.length > 50) || (height.text.toString()
                     .toInt() !in (1..249)) || (weight.text.toString()
                     .toDouble() !in (1.0..249.0)) || (age.text.toString().toInt() !in (1..149))
-            ){
+            ) {
                 result.text = "Данные введены некорректно"
             } else {
                 val res: Double =
