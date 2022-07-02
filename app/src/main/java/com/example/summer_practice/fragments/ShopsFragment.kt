@@ -29,4 +29,8 @@ class ShopsFragment: Fragment(R.layout.fragment_shops) {
             }
         }
     }
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
 }

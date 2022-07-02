@@ -18,4 +18,8 @@ class FinishFragment: Fragment(R.layout.fragment_finish) {
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+    }
+
 }

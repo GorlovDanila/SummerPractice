@@ -29,4 +29,9 @@ class MusicsFragment: Fragment(R.layout.fragment_musics) {
             }
         }
     }
+
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
 }

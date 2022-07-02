@@ -31,4 +31,8 @@ class MessagesFragment: Fragment(R.layout.fragment_messages) {
             }
         }
     }
+    override fun onDestroyView() {
+        _binding = null
+        super.onDestroyView()
+    }
 }
